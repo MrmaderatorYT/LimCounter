@@ -11,7 +11,7 @@ android {
         minSdk 28
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "0.1global_alpha"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -47,4 +47,10 @@ dependencies {
     implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
     implementation 'net.objecthunter:exp4j:0.4.8'
 
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
